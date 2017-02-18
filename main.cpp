@@ -67,7 +67,8 @@ int main() {
     std::cout << std::endl;
 
     Scraper scraper = Scraper();
-    std::string res = scraper.scrape("www.stream.twitter.com/1.1/statuses/sample.json");
+    //std::string res = scraper.scrape("www.stream.twitter.com/1.1/statuses/sample.json");
+    std::string res = scraper.scrape("www.aftonbladet.se", "/melodifestivalen/a/zorJK/anton-ewald-forvirringen-ar-total");
     std::cout << "\n\n\n\n\nResponse: " << res << std::endl;
     return 0;
 }

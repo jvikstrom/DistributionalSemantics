@@ -6,20 +6,21 @@
 #define DISTRIBUTIONALSEMANTICS_SCRAPER_H
 
 #include <iostream>
-#include <winsock2.h>
+#include <boost/asio.hpp>
+
+using boost::asio::ip::tcp;
 
 class Scraper {
-    WSADATA wsa;
 
     //TODO Implement destructor that destroys wsa. Also implement scrape function. And scrape twitter
-    SOCKET openConnection(std::string url);
+    //SOCKET openConnection(std::string url);
 
-    void closeConnection(SOCKET s);
+    //void closeConnection(SOCKET s);
 
 public:
     Scraper();
     ~Scraper();
-    std::string scrape(std::string url);
+    std::string scrape(std::string url, std::string doc);
 };
 
 

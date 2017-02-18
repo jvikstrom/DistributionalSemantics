@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Programs/Development/Projects/DistriSemantics/Indexer/IndexEntry.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/IndexEntry.cpp
 IndexEntry.h
-D:/Programs/Development/Projects/DistriSemantics/Indexer/IndexEntry.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/IndexEntry.h
 
-D:/Programs/Development/Projects/DistriSemantics/Indexer/IndexEntry.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/IndexEntry.h
 vector
 -
 cmath
@@ -18,93 +18,93 @@ cmath
 stdlib.h
 -
 ../Utility/Word.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Word.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
 
-D:/Programs/Development/Projects/DistriSemantics/Indexer/Indexer.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/Indexer.cpp
 Indexer.h
-D:/Programs/Development/Projects/DistriSemantics/Indexer/Indexer.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/Indexer.h
 
-D:/Programs/Development/Projects/DistriSemantics/Indexer/Indexer.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/Indexer.h
 utility
 -
 unordered_map
 -
 IndexEntry.h
-D:/Programs/Development/Projects/DistriSemantics/Indexer/IndexEntry.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/IndexEntry.h
 ../Utility/Text.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Text.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
 ../Utility/Word.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Word.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
 
-D:/Programs/Development/Projects/DistriSemantics/Parser/Parser.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.cpp
 Parser.h
-D:/Programs/Development/Projects/DistriSemantics/Parser/Parser.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
 
-D:/Programs/Development/Projects/DistriSemantics/Parser/Parser.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
 locale
 -
 ../Utility/Text.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Text.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
 
-D:/Programs/Development/Projects/DistriSemantics/Scraper/Scraper.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.cpp
 Scraper.h
-D:/Programs/Development/Projects/DistriSemantics/Scraper/Scraper.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
 
-D:/Programs/Development/Projects/DistriSemantics/Scraper/Scraper.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
 iostream
 -
-winsock2.h
+boost/asio.hpp
 -
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Paragraph.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.cpp
 Paragraph.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Paragraph.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Paragraph.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h
 vector
 -
 Sentence.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Sentence.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Sentence.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.cpp
 Sentence.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Sentence.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Sentence.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h
 vector
 -
 Word.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Word.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Text.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.cpp
 Text.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Text.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Text.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
 vector
 -
 Paragraph.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Paragraph.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Word.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.cpp
 Word.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Word.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
 
-D:/Programs/Development/Projects/DistriSemantics/Utility/Word.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
 string
 -
 
-D:/Programs/Development/Projects/DistriSemantics/main.cpp
+/home/jovi/Programming/Fluff/DistributionalSemantics/main.cpp
 iostream
 -
 Utility/Paragraph.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Paragraph.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h
 Utility/Text.h
-D:/Programs/Development/Projects/DistriSemantics/Utility/Text.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
 Parser/Parser.h
-D:/Programs/Development/Projects/DistriSemantics/Parser/Parser.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
 Indexer/Indexer.h
-D:/Programs/Development/Projects/DistriSemantics/Indexer/Indexer.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/Indexer.h
 Scraper/Scraper.h
-D:/Programs/Development/Projects/DistriSemantics/Scraper/Scraper.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
 

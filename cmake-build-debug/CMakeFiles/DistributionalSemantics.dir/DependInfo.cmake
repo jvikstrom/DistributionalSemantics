@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Programs/Development/Projects/DistriSemantics/Indexer/IndexEntry.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Indexer/IndexEntry.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Indexer/Indexer.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Indexer/Indexer.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Parser/Parser.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Scraper/Scraper.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Utility/Paragraph.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Paragraph.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Utility/Sentence.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Sentence.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Utility/Text.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Text.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/Utility/Word.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Word.cpp.obj"
-  "D:/Programs/Development/Projects/DistriSemantics/main.cpp" "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/main.cpp.obj"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/IndexEntry.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Indexer/IndexEntry.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/Indexer.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Indexer/Indexer.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Paragraph.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Sentence.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Text.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/Utility/Word.cpp.o"
+  "/home/jovi/Programming/Fluff/DistributionalSemantics/main.cpp" "/home/jovi/Programming/Fluff/DistributionalSemantics/cmake-build-debug/CMakeFiles/DistributionalSemantics.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
