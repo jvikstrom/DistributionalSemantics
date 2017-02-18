@@ -1,0 +1,28 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Programs\Development\Projects\DistriSemantics
+CMake Warning at C:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version
+Call Stack (most recent call first):
+  C:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:9 (FIND_PACKAGE)
+
+
+CMake Error at C:/Program Files (x86)/JetBrains/CLion 2016.3/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1753 (message):
+  Unable to find the requested Boost libraries.
+
+  Unable to find the Boost header files.  Please set BOOST_ROOT to the root
+  directory containing Boost or BOOST_INCLUDEDIR to the directory containing
+  Boost's headers.
+Call Stack (most recent call first):
+  CMakeLists.txt:9 (FIND_PACKAGE)
+
+
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+Boost_INCLUDE_DIR (ADVANCED)
+   used as include directory in directory D:/Programs/Development/Projects/DistriSemantics
+   used as include directory in directory D:/Programs/Development/Projects/DistriSemantics
+   used as include directory in directory D:/Programs/Development/Projects/DistriSemantics
+
+-- Configuring incomplete, errors occurred!
+See also "D:/Programs/Development/Projects/DistriSemantics/cmake-build-debug/CMakeFiles/CMakeOutput.log".
