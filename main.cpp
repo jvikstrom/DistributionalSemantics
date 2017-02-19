@@ -3,6 +3,7 @@
 #include "Utility/Paragraph.h"
 #include "Utility/Text.h"
 #include "Parser/Parser.h"
+#include "Parser/TwitterParser.h"
 #include "Indexer/Indexer.h"
 #include "Scraper/Scraper.h"
 
@@ -54,6 +55,7 @@ std::string txt = "Earlier in the week we ran both words and video discussing an
         "In the short-term future, Dawn of War 3 is due later this year.\n"
         "";
 std::string txt2 = "Hi my name is. Hi your name is";
+
 int main() {
     Parser parser;
     Text text = parser.parse(txt2);
@@ -68,7 +70,24 @@ int main() {
 
     Scraper scraper = Scraper();
     //std::string res = scraper.scrape("www.stream.twitter.com/1.1/statuses/sample.json");
-    std::string res = scraper.scrape("www.aftonbladet.se", "/melodifestivalen/a/zorJK/anton-ewald-forvirringen-ar-total");
-    std::cout << "\n\n\n\n\nResponse: " << res << std::endl;
+    //1.1/statuses/sample.json
+    //API KEY:
+    //FkBVBjVaM436y6kH0IID2RvUU
+
+    //API SECRET:
+    //0ioiwnidfN2qdCrIXtCiHvcRQXB8nYy5HypPIUMh8fhlBL0OcP
+
+    //ACCESS TOKEN:
+    //3254148759-4MK41JN673vq8YAUN740YZsybBfaCiHakkT7vq7
+
+    //ACCES TOKEN SECRET
+    //HMhx2BzSPsFjQauSfmmiOcG04nOZ12kCL5lhqGmnO0rZA
+    TwitterParser tParser;
+    std::string res = scraper.search("trump");
+    std::cout << res << std::endl;
+    Text txt = tParser.parse(res);
+    std::cout << txt.to_string() << std::endl;
+
+//    std::cout << "\n\n\n\n\nResponse: " << res << std::endl;
     return 0;
 }

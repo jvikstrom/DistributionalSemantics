@@ -11,7 +11,7 @@
 
 class Parser {
 public:
-    Text parse(std::string text);
+    virtual Text parse(std::string text);
 };
 
 

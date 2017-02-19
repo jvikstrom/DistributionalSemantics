@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <boost/asio.hpp>
+#include <twitcurl.h>
+#include <curl/curl.h>
 
 using boost::asio::ip::tcp;
 
@@ -16,11 +18,12 @@ class Scraper {
     //SOCKET openConnection(std::string url);
 
     //void closeConnection(SOCKET s);
-
+    twitCurl twitterObj;
 public:
     Scraper();
     ~Scraper();
     std::string scrape(std::string url, std::string doc);
+    std::string search(std::string searchTerm);
 };
 
 

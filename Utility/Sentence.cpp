@@ -12,3 +12,10 @@ Sentence::Builder & Sentence::Builder::addWord(Word &word) {
 Sentence Sentence::Builder::build() {
     return Sentence(innerWords);
 }
+std::string Sentence::to_string() {
+    std::string str;
+    for(Word word : words){
+        str.append(word.to_string()).append(" ");
+    }
+    return str;
+}

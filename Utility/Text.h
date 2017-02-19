@@ -17,6 +17,7 @@ public:
     std::vector<Paragraph>& getParagraphs(){
         return paragraphs;
     }
+    std::string to_string();
     class Builder{
         std::vector<Paragraph> innerParagraphs;
     public:

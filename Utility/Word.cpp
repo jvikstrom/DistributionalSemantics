@@ -3,3 +3,7 @@
 //
 
 #include "Word.h"
+
+std::string Word::to_string() {
+    return word;
+}

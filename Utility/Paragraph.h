@@ -16,6 +16,7 @@ public:
     std::vector<Sentence>& getSentences(){
         return sentences;
     }
+    std::string to_string();
     class Builder{
         std::vector<Sentence> innerSenteces;
     public:

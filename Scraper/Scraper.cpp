@@ -4,8 +4,17 @@
 
 #include "Scraper.h"
 
-Scraper::Scraper() {
 
+std::string myOauthKey = "3254148759-4MK41JN673vq8YAUN740YZsybBfaCiHakkT7vq7";
+std::string myOathSecret = "HMhx2BzSPsFjQauSfmmiOcG04nOZ12kCL5lhqGmnO0rZA";
+std::string consumerKey = "FkBVBjVaM436y6kH0IID2RvUU";
+std::string consumerSecret = "0ioiwnidfN2qdCrIXtCiHvcRQXB8nYy5HypPIUMh8fhlBL0OcP";
+
+Scraper::Scraper() {
+    twitterObj.getOAuth().setConsumerKey(consumerKey);
+    twitterObj.getOAuth().setConsumerSecret(consumerSecret);
+    twitterObj.getOAuth().setOAuthTokenKey(myOauthKey);
+    twitterObj.getOAuth().setOAuthTokenSecret(myOathSecret);
 }
 
 
@@ -13,8 +22,32 @@ Scraper::~Scraper(){
 
 }
 
+std::string Scraper::search(std::string searchTerm){
+    std::string reply;
+    if(!twitterObj.search("trump", "1000")){
+        std::cout << "Search on " << searchTerm << " failed" << std::endl;
+        return "";
+    }
+    twitterObj.getLastWebResponse(reply);
+
+    return reply;
+}
+
 std::string Scraper::scrape(std::string url, std::string doc) {
-    boost::asio::io_service io;
+    std::string reply;
+    /*if(twitterObj.accountVerifyCredGet()){
+
+        twitterObj.getLastWebResponse(reply);
+        std::cout << "Account verified\n" << std::flush << reply << std::endl;
+    }else{
+        twitterObj.getLastCurlError(reply);
+        std::cout << "Error: " << reply << std::endl;
+    }*/
+
+    return "";
+
+
+    /*    boost::asio::io_service io;
 
     tcp::resolver resolver(io);
     tcp::resolver::query query(url, "http");
@@ -27,7 +60,7 @@ std::string Scraper::scrape(std::string url, std::string doc) {
     std::ostream request_stream(&request);
     request_stream << "GET " << doc << " HTTP/1.0\r\n";
     request_stream << "Host: " << url << "\r\n";
-    request_stream << "Accept: */*\r\n";
+    request_stream << "Accept: * /*\r\n";
     request_stream << "Connection: close\r\n\r\n";
 
     boost::asio::write(socket, request);
@@ -42,11 +75,11 @@ std::string Scraper::scrape(std::string url, std::string doc) {
     response_stream >> status_code;
     std::string status_msg;
     std::getline(response_stream, status_msg);
-    if(!response_stream || http_version.substr(0,5) != "HTTP/"){
+    if (!response_stream || http_version.substr(0, 5) != "HTTP/") {
         std::cout << "Invalid response" << std::endl;
         exit(-1);
     }
-    if(status_code != 200){
+    if (status_code != 200) {
         std::cout << "Response returned with status code: " << status_code << std::endl;
         return "";
     }
@@ -54,12 +87,12 @@ std::string Scraper::scrape(std::string url, std::string doc) {
     boost::asio::read_until(socket, response, "\r\n\r\n");
 
     std::string header;
-    while(std::getline(response_stream, header) && header != "\r"){
+    while (std::getline(response_stream, header) && header != "\r") {
         std::cout << header << '\n';
     }
 
     std::string content;
-    if(response.size() > 0){
+    if (response.size() > 0) {
         std::cout << &response << '\n';
         boost::asio::streambuf::const_buffers_type bufs = response.data();
         std::string str(boost::asio::buffers_begin(bufs), boost::asio::buffers_begin(bufs) + response.size());
@@ -68,83 +101,17 @@ std::string Scraper::scrape(std::string url, std::string doc) {
 
 
     boost::system::error_code error;
-    while(boost::asio::read(socket, response, boost::asio::transfer_at_least(1), error)){
+    while (boost::asio::read(socket, response, boost::asio::transfer_at_least(1), error)) {
         std::cout << &response << '\n';
         boost::asio::streambuf::const_buffers_type bufs = response.data();
         std::string str(boost::asio::buffers_begin(bufs), boost::asio::buffers_begin(bufs) + response.size());
         content += str;
-        if(error!= boost::asio::error::eof){
+        if (error != boost::asio::error::eof) {
             exit(-1);
             //throw boost::system::system_error(error);
         }
     }
 
     std::cout << std::endl;
-    return content;
-    /*SOCKET s = openConnection(url);
-    const char* message = "GET / HTTP/1.1\r\n\r\n";
-    if( send(s , message , strlen(message) , 0) < 0)
-    {
-        std::cout << "Failed sending" << std::endl;
-        exit(-1);
-    }
-
-    char reply[2000];
-    int size;
-    if((size = recv(s , reply, 2000 , 0)) == SOCKET_ERROR)
-    {
-        std::cout << "Couldn't recieve" << std::endl;
-        exit(-1);
-    }
-
-    std::cout << "Recieved data" << std::endl;
-    //Add a NULL terminating character to make it a proper string before printing
-    reply[size] = '\0';
-    std::cout << "SIZE: " << size << std::endl;
-    std::cout << reply << std::endl;
-    std::cout << std::endl;
-    closeConnection(s);
-    return std::string(reply);*/
+    return content;*/
 }
-/*
-void Scraper::closeConnection(SOCKET s) {
-    //closesocket(s);
-}
-
-SOCKET Scraper::openConnection(std::string url) {
-    SOCKET s = socket(AF_INET, SOCK_STREAM, 0);
-    if(s== INVALID_SOCKET){
-        std::cout << "Couldn't open socket: " << WSAGetLastError() << std::endl;
-        return INVALID_SOCKET;
-    }
-
-    struct sockaddr_in server;
-    struct hostent *he;
-    const char* hostname = url.c_str();
-
-    if((he = gethostbyname(hostname)) == NULL){
-        std::cout << "Couldn't get host for: " << hostname << std::endl;
-        return NULL;
-    }
-
-    struct in_addr **addr_list;
-    char ip[100];
-
-    addr_list = (struct in_addr **) he->h_addr_list;
-
-    for(int i = 0; addr_list[i] != NULL; i++)
-    {
-        //Return the first one;
-        strcpy(ip , inet_ntoa(*addr_list[i]) );
-    }
-
-    server.sin_addr.s_addr = inet_addr(ip);
-    server.sin_family = AF_INET;
-    server.sin_port = htons(80);
-
-    if(connect(s, (struct sockaddr*)&server, sizeof(server)) < 0){
-        std::cout << "Connection error" << std::endl;
-        return NULL;
-    }
-    return s;
-}*/

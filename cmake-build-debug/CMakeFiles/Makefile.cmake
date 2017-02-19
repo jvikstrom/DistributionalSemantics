@@ -30,6 +30,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/Compiler/GNU-CXX.cmake"
   "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/Compiler/GNU.cmake"
   "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake"
+  "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/FindCURL.cmake"
   "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake"
   "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/FindPackageMessage.cmake"
   "/home/jovi/clion-2016.3.2/bin/cmake/share/cmake-3.6/Modules/FindThreads.cmake"

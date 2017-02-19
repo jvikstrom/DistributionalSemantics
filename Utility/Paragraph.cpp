@@ -12,3 +12,10 @@ Paragraph::Builder& Paragraph::Builder::addSentece(Sentence& sentece){
 Paragraph Paragraph::Builder::build() {
     return Paragraph(innerSenteces);
 }
+std::string Paragraph::to_string() {
+    std::string str;
+    for(Sentence sent : this->sentences){
+        str.append(sent.to_string()).append(".");
+    }
+    return str;
+}

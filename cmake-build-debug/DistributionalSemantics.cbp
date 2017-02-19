@@ -102,6 +102,12 @@
 		<Unit filename="/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h">
 			<Option target="DistributionalSemantics"/>
 		</Unit>
+		<Unit filename="/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/TwitterParser.cpp">
+			<Option target="DistributionalSemantics"/>
+		</Unit>
+		<Unit filename="/home/jovi/Programming/Fluff/DistributionalSemantics/Parser/TwitterParser.h">
+			<Option target="DistributionalSemantics"/>
+		</Unit>
 		<Unit filename="/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.cpp">
 			<Option target="DistributionalSemantics"/>
 		</Unit>

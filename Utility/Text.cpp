@@ -12,3 +12,10 @@ Text::Builder& Text::Builder::addParagraph(Paragraph& paragraph){
 Text Text::Builder::build() {
     return Text(innerParagraphs);
 }
+std::string Text::to_string() {
+    std::string str;
+    for(Paragraph par : this->paragraphs){
+        str.append(par.to_string()).append("\n");
+    }
+    return str;
+}

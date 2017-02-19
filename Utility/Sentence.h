@@ -13,6 +13,7 @@ class Sentence {
     Sentence(std::vector<Word> words) : words(words){}
 public:
     Sentence(){}
+    std::string to_string();
     class Builder{
         std::vector<Word> innerWords;
     public:

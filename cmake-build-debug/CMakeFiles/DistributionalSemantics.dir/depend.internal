@@ -20,6 +20,15 @@ CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.o
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Lib/json.hpp
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/TwitterParser.cpp
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/TwitterParser.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
 CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o
  /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.cpp
  /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
@@ -44,7 +53,9 @@ CMakeFiles/DistributionalSemantics.dir/Utility/Word.cpp.o
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o
  /home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/IndexEntry.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Indexer/Indexer.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Lib/json.hpp
  /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/TwitterParser.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h

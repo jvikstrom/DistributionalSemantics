@@ -20,6 +20,15 @@ CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.o: ../Utility/Sentence.
 CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.o: ../Utility/Text.h
 CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.o: ../Utility/Word.h
 
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Lib/json.hpp
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Parser/Parser.h
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Parser/TwitterParser.cpp
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Parser/TwitterParser.h
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Paragraph.h
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Sentence.h
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Text.h
+CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Word.h
+
 CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o: ../Scraper/Scraper.cpp
 CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o: ../Scraper/Scraper.h
 
@@ -43,7 +52,9 @@ CMakeFiles/DistributionalSemantics.dir/Utility/Word.cpp.o: ../Utility/Word.h
 
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Indexer/IndexEntry.h
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Indexer/Indexer.h
+CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Lib/json.hpp
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Parser/Parser.h
+CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Parser/TwitterParser.h
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Scraper/Scraper.h
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Utility/Paragraph.h
 CMakeFiles/DistributionalSemantics.dir/main.cpp.o: ../Utility/Sentence.h

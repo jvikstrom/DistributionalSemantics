@@ -204,6 +204,33 @@ Parser/Parser.cpp.s:
 	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Parser/Parser.cpp.s
 .PHONY : Parser/Parser.cpp.s
 
+Parser/TwitterParser.o: Parser/TwitterParser.cpp.o
+
+.PHONY : Parser/TwitterParser.o
+
+# target to build an object file
+Parser/TwitterParser.cpp.o:
+	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o
+.PHONY : Parser/TwitterParser.cpp.o
+
+Parser/TwitterParser.i: Parser/TwitterParser.cpp.i
+
+.PHONY : Parser/TwitterParser.i
+
+# target to preprocess a source file
+Parser/TwitterParser.cpp.i:
+	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.i
+.PHONY : Parser/TwitterParser.cpp.i
+
+Parser/TwitterParser.s: Parser/TwitterParser.cpp.s
+
+.PHONY : Parser/TwitterParser.s
+
+# target to generate assembly for a file
+Parser/TwitterParser.cpp.s:
+	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.s
+.PHONY : Parser/TwitterParser.cpp.s
+
 Scraper/Scraper.o: Scraper/Scraper.cpp.o
 
 .PHONY : Scraper/Scraper.o
@@ -384,6 +411,9 @@ help:
 	@echo "... Parser/Parser.o"
 	@echo "... Parser/Parser.i"
 	@echo "... Parser/Parser.s"
+	@echo "... Parser/TwitterParser.o"
+	@echo "... Parser/TwitterParser.i"
+	@echo "... Parser/TwitterParser.s"
 	@echo "... Scraper/Scraper.o"
 	@echo "... Scraper/Scraper.i"
 	@echo "... Scraper/Scraper.s"
