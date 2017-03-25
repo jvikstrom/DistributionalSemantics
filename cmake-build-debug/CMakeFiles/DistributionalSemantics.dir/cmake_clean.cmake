@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DistributionalSemantics.dir/Indexer/Indexer.cpp.o"
   "CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o"
   "CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o"
+  "CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.o"
   "DistributionalSemantics.pdb"
   "DistributionalSemantics"
 )

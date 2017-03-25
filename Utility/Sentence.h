@@ -27,6 +27,8 @@ public:
     std::vector<Word>& getWords(){
         return words;
     }
+
+    bool empty();
 };
 
 

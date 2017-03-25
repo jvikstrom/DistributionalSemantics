@@ -3,6 +3,7 @@
 //
 
 #include "Scraper.h"
+#include "HttpRequest.h"
 
 
 std::string myOauthKey = "3254148759-4MK41JN673vq8YAUN740YZsybBfaCiHakkT7vq7";
@@ -33,7 +34,7 @@ std::string Scraper::search(std::string searchTerm){
     return reply;
 }
 
-std::string Scraper::scrape(std::string url, std::string doc) {
+std::string Scraper::scrape(std::string host, std::string path) {
     std::string reply;
     /*if(twitterObj.accountVerifyCredGet()){
 
@@ -44,13 +45,14 @@ std::string Scraper::scrape(std::string url, std::string doc) {
         std::cout << "Error: " << reply << std::endl;
     }*/
 
-    return "";
+    //return "";
 
 
-    /*    boost::asio::io_service io;
-
+    boost::asio::io_service io;
+    //TODO: TRY THIS:::::
+//http://stackoverflow.com/questions/40036854/creating-a-https-request-using-boost-asio-and-openssl
     tcp::resolver resolver(io);
-    tcp::resolver::query query(url, "http");
+    tcp::resolver::query query(host, "http");
     tcp::resolver::iterator ep_iterator = resolver.resolve(query);
 
     tcp::socket socket(io);
@@ -58,11 +60,14 @@ std::string Scraper::scrape(std::string url, std::string doc) {
 
     boost::asio::streambuf request;
     std::ostream request_stream(&request);
-    request_stream << "GET " << doc << " HTTP/1.0\r\n";
-    request_stream << "Host: " << url << "\r\n";
+    HttpRequest httpRequest(RequestType::GET, host, path);
+
+    request_stream << httpRequest.toString();
+/*    request_stream << "GET " << path << " HTTP/1.0\r\n";
+    request_stream << "Host: " << host << "\r\n";
     request_stream << "Accept: * /*\r\n";
     request_stream << "Connection: close\r\n\r\n";
-
+*/
     boost::asio::write(socket, request);
 
     boost::asio::streambuf response;
@@ -113,5 +118,5 @@ std::string Scraper::scrape(std::string url, std::string doc) {
     }
 
     std::cout << std::endl;
-    return content;*/
+    return content;
 }

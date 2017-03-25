@@ -93,11 +93,15 @@ vector
 -
 
 /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.cpp
+iostream
+-
 Parser.h
 /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
 
 /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
 locale
+-
+ctype.h
 -
 ../Utility/Text.h
 /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
@@ -112,9 +116,23 @@ TwitterParser.h
 Parser.h
 /home/jovi/Programming/Fluff/DistributionalSemantics/Parser/Parser.h
 
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.cpp
+HttpRequest.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.h
+
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.h
+map
+-
+string
+-
+../Utility/Logger.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Logger.h
+
 /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.cpp
 Scraper.h
 /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
+HttpRequest.h
+/home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.h
 
 /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
 iostream
@@ -124,6 +142,12 @@ boost/asio.hpp
 twitcurl.h
 -
 curl/curl.h
+-
+
+/home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Logger.h
+iostream
+-
+string
 -
 
 /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.cpp

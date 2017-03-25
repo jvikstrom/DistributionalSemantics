@@ -19,3 +19,9 @@ std::string Paragraph::to_string() {
     }
     return str;
 }
+
+bool Paragraph::empty() {
+    if(this->sentences.size() == 0){
+        return false;
+    }
+}

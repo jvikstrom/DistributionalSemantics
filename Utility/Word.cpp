@@ -7,3 +7,7 @@
 std::string Word::to_string() {
     return word;
 }
+
+bool Word::empty(){
+    return word == "";
+}

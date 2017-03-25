@@ -82,6 +82,11 @@ int main() {
 
     //ACCES TOKEN SECRET
     //HMhx2BzSPsFjQauSfmmiOcG04nOZ12kCL5lhqGmnO0rZA
+    //std::string ret = scraper.scrape("www.stream.twitter.com", "/1.1/statuses/sample.json");
+    std::string ret = scraper.scrape("www.stream.twitter.com", "/");
+
+    std::cout << ret << std::endl;
+    return 0;
     TwitterParser tParser;
     std::string res = scraper.search("trump");
     std::cout << res << std::endl;

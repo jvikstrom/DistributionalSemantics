@@ -6,7 +6,7 @@
 #define DISTRIBUTIONALSEMANTICS_PARSER_H
 
 #include <locale>
-
+#include <ctype.h>
 #include "../Utility/Text.h"
 
 class Parser {

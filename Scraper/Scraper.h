@@ -22,7 +22,7 @@ class Scraper {
 public:
     Scraper();
     ~Scraper();
-    std::string scrape(std::string url, std::string doc);
+    std::string scrape(std::string host, std::string path);
     std::string search(std::string searchTerm);
 };
 

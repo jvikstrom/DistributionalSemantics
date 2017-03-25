@@ -19,3 +19,12 @@ std::string Sentence::to_string() {
     }
     return str;
 }
+
+bool Sentence::empty() {
+    for(Word word : this->words){
+        if(!word.empty()){
+            return false;
+        }
+    }
+    return true;
+}

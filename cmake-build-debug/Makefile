@@ -231,6 +231,33 @@ Parser/TwitterParser.cpp.s:
 	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.s
 .PHONY : Parser/TwitterParser.cpp.s
 
+Scraper/HttpRequest.o: Scraper/HttpRequest.cpp.o
+
+.PHONY : Scraper/HttpRequest.o
+
+# target to build an object file
+Scraper/HttpRequest.cpp.o:
+	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.o
+.PHONY : Scraper/HttpRequest.cpp.o
+
+Scraper/HttpRequest.i: Scraper/HttpRequest.cpp.i
+
+.PHONY : Scraper/HttpRequest.i
+
+# target to preprocess a source file
+Scraper/HttpRequest.cpp.i:
+	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.i
+.PHONY : Scraper/HttpRequest.cpp.i
+
+Scraper/HttpRequest.s: Scraper/HttpRequest.cpp.s
+
+.PHONY : Scraper/HttpRequest.s
+
+# target to generate assembly for a file
+Scraper/HttpRequest.cpp.s:
+	$(MAKE) -f CMakeFiles/DistributionalSemantics.dir/build.make CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.s
+.PHONY : Scraper/HttpRequest.cpp.s
+
 Scraper/Scraper.o: Scraper/Scraper.cpp.o
 
 .PHONY : Scraper/Scraper.o
@@ -414,6 +441,9 @@ help:
 	@echo "... Parser/TwitterParser.o"
 	@echo "... Parser/TwitterParser.i"
 	@echo "... Parser/TwitterParser.s"
+	@echo "... Scraper/HttpRequest.o"
+	@echo "... Scraper/HttpRequest.i"
+	@echo "... Scraper/HttpRequest.s"
 	@echo "... Scraper/Scraper.o"
 	@echo "... Scraper/Scraper.i"
 	@echo "... Scraper/Scraper.s"

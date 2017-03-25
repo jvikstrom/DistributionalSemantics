@@ -29,8 +29,14 @@ CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Se
 CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Text.h
 CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o: ../Utility/Word.h
 
+CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.o: ../Scraper/HttpRequest.cpp
+CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.o: ../Scraper/HttpRequest.h
+CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.o: ../Utility/Logger.h
+
+CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o: ../Scraper/HttpRequest.h
 CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o: ../Scraper/Scraper.cpp
 CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o: ../Scraper/Scraper.h
+CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o: ../Utility/Logger.h
 
 CMakeFiles/DistributionalSemantics.dir/Utility/Paragraph.cpp.o: ../Utility/Paragraph.cpp
 CMakeFiles/DistributionalSemantics.dir/Utility/Paragraph.cpp.o: ../Utility/Paragraph.h

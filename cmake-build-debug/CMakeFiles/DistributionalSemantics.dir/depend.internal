@@ -29,9 +29,15 @@ CMakeFiles/DistributionalSemantics.dir/Parser/TwitterParser.cpp.o
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Sentence.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Text.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Word.h
+CMakeFiles/DistributionalSemantics.dir/Scraper/HttpRequest.cpp.o
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.cpp
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Logger.h
 CMakeFiles/DistributionalSemantics.dir/Scraper/Scraper.cpp.o
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/HttpRequest.h
  /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.cpp
  /home/jovi/Programming/Fluff/DistributionalSemantics/Scraper/Scraper.h
+ /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Logger.h
 CMakeFiles/DistributionalSemantics.dir/Utility/Paragraph.cpp.o
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.cpp
  /home/jovi/Programming/Fluff/DistributionalSemantics/Utility/Paragraph.h

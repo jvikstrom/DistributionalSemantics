@@ -17,7 +17,7 @@ INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} ${CURL_INCLUDE_DIRS})
 
 
 
-set(SOURCE_FILES main.cpp Parser/Parser.cpp Parser/Parser.h Utility/Sentence.cpp Utility/Sentence.h Utility/Word.cpp Utility/Word.h Utility/Logger.h Utility/Paragraph.cpp Utility/Paragraph.h Utility/Text.cpp Utility/Text.h Indexer/IndexEntry.cpp Indexer/IndexEntry.h Indexer/Indexer.cpp Indexer/Indexer.h Scraper/Scraper.cpp Scraper/Scraper.h Parser/TwitterParser.cpp Parser/TwitterParser.h)
+set(SOURCE_FILES main.cpp Parser/Parser.cpp Parser/Parser.h Utility/Sentence.cpp Utility/Sentence.h Utility/Word.cpp Utility/Word.h Utility/Logger.h Utility/Paragraph.cpp Utility/Paragraph.h Utility/Text.cpp Utility/Text.h Indexer/IndexEntry.cpp Indexer/IndexEntry.h Indexer/Indexer.cpp Indexer/Indexer.h Scraper/Scraper.cpp Scraper/Scraper.h Parser/TwitterParser.cpp Parser/TwitterParser.h Scraper/HttpRequest.cpp Scraper/HttpRequest.h)
 add_executable(DistributionalSemantics ${SOURCE_FILES})
 
 

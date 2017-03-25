@@ -14,6 +14,7 @@ public:
     Word(){}
     Word(std::string word)  : word(word){}
     std::string to_string();
+    bool empty();
     std::string getWord(){
         //Do we want to return a reference? (Maybe a const?)
         return word;

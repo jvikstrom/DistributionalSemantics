@@ -2,11 +2,12 @@
 // Created by Johan Vikström on 2017-02-15.
 //
 
+#include <iostream>
 #include "Parser.h"
 
 std::string paragraphDelim = "\n";
 std::string delims = ",."; //Delimiters between words
-std::string allowedCharacters = "abcdefghijklmnopqrstuvwxyzåäöABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ";
+std::string wordDelims = " ";
 
 Text Parser::parse(std::string text) {
     Text::Builder tBuilder;
@@ -14,7 +15,11 @@ Text Parser::parse(std::string text) {
     Sentence::Builder sBuilder;
     std::string word = "";
     for(int i = 0; i < text.size(); i++){
-        if(allowedCharacters.find(text[i]) != std::string::npos){
+        //Probably want to add in stuff like '.
+        //Also #'s should not end a sentence.
+        bool isAlpha = false;
+        if(isalpha(text[i])){
+            isAlpha = true;
             word += std::tolower(text[i], std::locale()) ;
         }else if(word != ""){
             Word w(word);
@@ -22,16 +27,19 @@ Text Parser::parse(std::string text) {
             sBuilder.addWord(w);
         }
 
-        if(delims.find(text[i]) != std::string::npos){
-            Sentence sent = sBuilder.build();
-            pBuilder.addSentece(sent);
-            sBuilder = Sentence::Builder();
-        }
-
-        if(paragraphDelim.find(text[i]) != std::string::npos){
+        if(paragraphDelim.find(text[i]) != std::string::npos && !isAlpha){
             Paragraph p = pBuilder.build();
-            tBuilder.addParagraph(p);
-            pBuilder = Paragraph::Builder();
+            if(!p.empty()){
+                tBuilder.addParagraph(p);
+                pBuilder = Paragraph::Builder();
+            }
+
+        }else if(wordDelims.find(text[i]) == std::string::npos && !isAlpha){
+            Sentence sent = sBuilder.build();
+            if(!sent.empty()){
+                pBuilder.addSentece(sent);
+                sBuilder = Sentence::Builder();
+            }
         }
     }
 
